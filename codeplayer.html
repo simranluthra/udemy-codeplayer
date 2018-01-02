@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+   <!--CSS   -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+<div id="header">
+  <div id="logo">CodePlayer
+  </div>
+  <div id="buttonContainer">
+  <div class="toggleButton active" id="html">HTML</div>
+  <div class="toggleButton" id="css">CSS</div>
+  <div class="toggleButton" id="javascript">Javascript</div>
+  <div class="toggleButton active" id="output">Output</div>
+</div>
+</div>
+<div id="bodyContainer">
+ <textarea id="htmlPanel" class="panel"><p id="paragraph">Hello world!</p></textarea>
+ <textarea id="cssPanel" class="panel hidden">p {color: green;}</textarea>
+ <textarea id="javascriptPanel" class="panel hidden">document.getElementById("paragraph").innerHTML = "Hello Sim!";</textarea>
+ <iframe id="outputPanel" class="panel"></iframe>
+
+</div>
+
+<script src="script.js"></script>
+
+  </body>
+</html>
